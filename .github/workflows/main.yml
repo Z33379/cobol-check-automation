@@ -12,7 +12,8 @@ jobs:
     - name: Set up Java
       uses: actions/setup-java@v2
       with:
-        java-version: 1.8
+        distribution: 'adopt'
+        java-version: '11'
     - name: Run COBOL Check
       env:
         ZOWE_USERNAME: ${{ secrets.ZOWE_USERNAME }}
